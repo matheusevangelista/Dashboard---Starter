@@ -1,0 +1,49 @@
+html,body
+{
+    height: 100%;
+    margin: 0px;
+    padding:  0px;
+}
+body
+{
+    // overflow: hidden;
+}
+.header
+{
+    position: relative;
+    width: 100%;
+    height: $navbar-height;
+    background-color: #333;
+}
+
+.main
+{
+    position: relative;
+    width: 100%;
+    height: calc(100% - #{$navbar-height});
+}
+
+.panel
+{
+    position: relative;
+    float: left;
+    width: $panel-width;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+
+.sidebar
+{
+    position: relative;
+    float: left;
+    width: $sidebar-width;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
